@@ -1,0 +1,245 @@
+body {
+    background-color: #FFFFFF;
+    background-image: linear-gradient(135deg, #FFFFFF 0%, #d4e78e 50%, #ebe66b 100%);
+    width: 100%;
+}
+
+.site-header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    box-sizing: border-box;
+    padding: 16px;
+    background-color: #fffff1;
+    min-height: 64px;
+  
+}
+
+.navigation__list{
+list-style: none;
+display: flex;
+justify-content: space-around;
+}
+
+.navigation__link {
+    color: rgb(75, 8, 138);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-decoration: none;
+    background-color: yellow;
+    padding: 5px 20px;
+    border-radius: 10px;
+}
+
+.navigation__item{
+  margin-bottom: 16px;  
+}
+
+
+.main {
+    margin: 32px 50px;
+    padding: none;
+    align-items: center;
+}
+
+.header {
+    grid-area: header;
+}
+
+.heading {
+    color: rgb(13, 90, 121);
+    font-size: 36px;
+    text-align: center;
+}
+
+p {
+    color: darkblue;
+}
+
+.about {}
+
+.about__header {
+    color: #2F4550;
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 32px;
+}
+
+.about__link {
+    color: #2D1E2F;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+}
+
+.about__paragraph {
+    line-height: 24px;
+    color: #2F4550;
+    max-width: 720px;
+    text-align: justify;
+    margin-top: 0;
+}
+
+.about__picture {
+    width: 100%;
+    height: 100%;
+    max-width: 226px;
+    max-height: 340px;
+    margin: 0 32px 48px 0;
+    border-radius: 1em;
+    box-shadow: 3px 3px 5px 6px #ccc;
+    display: block;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: greenyellow;
+    margin-top: 51px;
+    border: 5px solid red;
+    box-sizing: border-box;
+    display:
+}
+
+#week01 .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 1em;
+    grid-gap: 1em;
+}
+
+#week02 .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 1em;
+    grid-gap: 1em;
+}
+
+.week__header02 {
+    text-decoration: underline;
+    font-size: 28px;
+    color: #2F4550;
+    grid-column: 1 / span 3;
+    grid-row: 1;
+    text-align: center;
+}
+
+}
+
+/** .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr auto;
+    column-gap: 16px;
+    row-gap: 16px;
+    justify-items: center;
+    clear: both;
+    grid-template-areas: "section section" "week week";
+} **/
+
+.section {
+    grid-area: section;
+}
+
+.section__header {
+    color: rgb(241, 168, 11);
+    font-size: 32px;
+    clear: both;
+    text-align: center;
+    margin: 24px, 0;
+}
+
+.week {
+    grid-area: week;
+}
+
+.week__header {
+    text-decoration: underline;
+    font-size: 28px;
+    color: #2F4550;
+    grid-column: 1 / span 2;
+    grid-row: 1;
+    text-align: center;
+}
+
+.article {}
+
+.article__header {
+    color: rgb(13, 90, 121);
+    font-size: 20px;
+}
+
+.article__paragraph {
+    color: #2F4550;
+    font-family: 'Times New Roman', Times, serif;
+    line-height: 24px;
+}
+
+.article__paragraph--secondary {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.footer {
+    color: green;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display: inline;
+}
+
+.link__footer {
+    color: #2D1E2F;
+    text-decoration: none;
+    display: inline;
+    padding-left: 90px;
+    font-weight: bold;
+}
+
+@media (max-width: 640px) {
+    #week01 .grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        margin: 1em;
+        grid-gap: 1em;
+    }
+    .week__header {
+        grid-column: 1;
+        grid-row: 1;
+    }
+    #week02 .grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        margin: 1em;
+        grid-gap: 1em;
+    }
+    .week__header02 {
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    .navigation__switcher{
+        position: absolute;
+    right: 32px;
+    top: 20px;
+    border: none;
+    background: none;
+    font-size: 24px;
+
+    }
+        .navigation__list{
+           display: none;
+        }
+
+        .navigation__list--visible{
+            display:flex;
+            flex-direction: column;
+        justify-items: center;
+        }
+
+    }
+
+    @media (min-width: 640px){
+        .navigation__switcher{
+            display: none;
+        }
+    }
