@@ -6,8 +6,8 @@ const age=39;
 console.log (`My name is ${name} and I have ${time} weeks to complete`);
 console.log (`My name is ` +name+ ' and I am ' +age+ ` years old`);
 
-const header = document.querySelector('.header--js');
-console.log (header);
+const aboutHeader=document.querySelector('.about__header--js');
+console.log (aboutHeader);
 
 const articles = document.querySelectorAll('.article__paragraph');
 console.log (articles);
